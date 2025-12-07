@@ -1,0 +1,89 @@
+.message {
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-assistant {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 80%;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  word-wrap: break-word;
+}
+
+.message-user .message-content {
+  background-color: #007bff;
+  color: white;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.message-assistant .message-content {
+  background-color: #f1f3f5;
+  color: #212529;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.message-text {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.message-sources {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sources-header {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.source-item {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.source-rank {
+  font-weight: 600;
+  color: #007bff;
+  margin-right: 0.5rem;
+}
+
+.source-score {
+  color: #6c757d;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.source-text {
+  color: #495057;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
